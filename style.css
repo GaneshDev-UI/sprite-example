@@ -1,0 +1,41 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sprite-container {
+    position: relative;
+    width: 95px;
+    height: 160px;
+    /* background-color: #fff; */
+    background-image: url(/sprite_walk.png);
+    background-position-x: 0px;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+    animation: walk 1s steps(12) infinite;
+    /* border: 1px solid #ccc; */
+    overflow: hidden;
+}
+
+@keyframes walk {
+    from {
+        background-position-x: 0px;
+    }
+    to {
+        background-position-x: -1140px;
+    }
+  }
